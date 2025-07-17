@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro Seminar Final Exam</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        #questionArea, #answerArea {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            min-height: 50px;
+            width: 80%;
+            max-width: 600px;
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        #questionArea {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        #answerArea {
+            border-top: none;
+            background-color: #e9ecef;
+            font-size: 0.9em;
+            color: #555;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin: 5px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #answerButton {
+            background-color: #28a745;
+        }
+        #answerButton:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Intro Seminar Final Exam</h1>
+    <button id="questionButton">Question</button>
+    <button id="answerButton" style="display: none;">Show answer</button>
+    <div id="questionArea">Questions will be displayed here</div>
+    <div id="answerArea">Answers will be shown here by clicking the button</div>
+
+<script src="questionAndAnswer.js"></script>
+
+</body>
+</html>
